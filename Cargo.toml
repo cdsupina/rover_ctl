@@ -1,0 +1,18 @@
+[package]
+name = "rover_ctl"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Terminal-based UDP teleop client for a Pico 2W omni-wheel rover"
+repository = "https://github.com/cdsupina/rover_ctl"
+authors = ["Carlo Supina <cdsupina@gmail.com>"]
+readme = "README.md"
+keywords = ["rover", "udp", "teleop", "robotics", "crossterm"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+crossterm = "0.29"
+
+[profile.release]
+opt-level = 3
+lto = true
