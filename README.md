@@ -1,5 +1,11 @@
 # rover_ctl
 
+> **⚠️ Retired.** Manual driving has been folded into
+> [rover_bridge](https://github.com/cdsupina/rover_bridge), which adds REST +
+> MCP control surfaces alongside the same WASD/QE keyboard driving (and
+> rebindable keys). Running both at once makes them fight over the rover —
+> use rover_bridge.
+
 Terminal-based UDP teleop client for a 4-wheel omni-drive rover. Reads keyboard
 events, streams body-frame velocity commands over UDP at 10 Hz.
 
